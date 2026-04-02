@@ -26,19 +26,18 @@
 
 #2 убрал не нужный while, добавил .join() добавил ввод
 def task(text:str) -> str:
-    result = ""
-    x = ""
     if len(text) == 5:
         result = " ".join(text[::-1]) 
         return "В слове ровно 5 символов! Задом наперед: " + result 
     elif len(text) >= 4 and 'л' in text.lower():
-        result = text 
+        result = text
         return f"В слове {result}, {len(text)} символов и есть буква 'л' "
     else:
         return "В слове нет буквы 'л' и оно не из 5 символов"
 
 user_word = input('Напиши слово и скажу тебе о нем кое-что: ')
 print(task(user_word))
+
 
 
 
