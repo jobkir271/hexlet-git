@@ -10,3 +10,7 @@ print(int(str(x),2))
 
 step = 2 ** 4
 print(step)
+
+x = '1011111'
+print(int(x,2))
+
