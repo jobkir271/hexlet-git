@@ -43,7 +43,7 @@ print(list_kwargs(product1 = 'apple', product2 = 'bananas'))
 labda_f = lambda x: x + 2
 print(labda_f(2))
 
-lambda_filter = list(filter(lambda x: x == 'o', 'moloko'))
+lambda_filter = list(filter(lambda x: x == 'o', 'olmoko'))
 print(lambda_filter)
 
 lambda_map = list(map(lambda x: x * 2, range(10)))

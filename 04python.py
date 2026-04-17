@@ -21,7 +21,7 @@ stroka = 'кирилл'
 
 def decorator (func):
     def wrapper(*args,**kwargs):
-        print(f"Запустилась {func.__name__}, с аргументами {args,kwargs}")
+        print(f"Запустилась {func.__name__},{r} с аргументами {args,kwargs}")
         result = func(*args,**kwargs)
         print("The end.")
         return result
