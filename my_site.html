@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Тест для Playwright</title>
+</head>
+<body>
+    <h1>Тест мокинга</h1>
+    <button id="getData">Получить данные от сервера</button>
+    <pre id="result">Здесь будет ответ...</pre>
+
+    <script>
+        document.getElementById('getData').onclick = async () => {
+            const response = await fetch('/api/data');
+            const data = await response.json();
+            document.getElementById('result').innerHTML = JSON.stringify(data, null, 2);
+        };
+    </script>
+</body>
+</html>
